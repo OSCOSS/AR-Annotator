@@ -1,0 +1,91 @@
+Procedure
+1.compare commented articles and reviews of articles in the semantic web journal. see common places
+Then compare the time to find related section that comments are talking about.
+Ask users some questions about these common comments and record their consumed times and compare them. 
+Repeat it for users for each type of reviews independently.
+
+
+current status:
+done: find these papers in semantic web and take out their reviews.
+Todo: make clean version of articles and ask two group of people and record their time.
+questions:
+Do you think this critic is valid?
+Do you agree with the reviewer?
+
+
+Papers:
+1.swj1144.pdf
+Linked Web APIs Dataset  
+Milan Dojchinovski ∗ and Tomas Vitvar 
+
+URL:
+http://www.semantic-web-journal.net/content/linked-web-apis-dataset-web-apis-meet-linked-data-1
+
+reviews:
+http://www.semantic-web-journal.net/content/linked-web-apis-dataset-web-apis-meet-linked-data-0
+
+
+Comments that exist in both the reviews and highlighted comments:
+Page 4:
+“Similar approach … debatable question” -> Maybe in a footnote?
+
+
+
+2.swj1257.pdf
+RODI: Benchmarking Relational-to-Ontology Mapping Generation QualityChristoph Pinkel et al
+
+reviews:
+http://www.semantic-web-journal.net/content/rodi-benchmarking-relational-ontology-mapping-generation-quality
+
+Comments that exist in both the reviews and highlighted comments:
+
+in Section 2.1 "Naming Conflicts" I believe that some of the challenges you claim to be unique to the relational-to-ontology context (singular vs. plural names, different tokenization) do actually also exist in other contexts such as ontology alignment.
+
+* Table 1: It is not clear to me how something as unspecific as an instance of owl:Class can provide _guidance_ to a mapping creator.
+
+
+* 4.1 "Overview":
+* Table 2 The first 3 columns reproduce table 1, which wastes space. Think of a better way of arranging this information. 
+
+
+1.3. Contributions
+> - The RODI framework: the RODI software pack
+I would not count this as a contribution of a scientific paper.
+
+4. RODI Benchmark Suite
+> Multi-source integration can be tested as a sequence
+> of different scenarios that share the same target ontol-
+> ogy. We include specialized scenarios for such testing
+> with the conference domain.
+I don't really agree that this would cover all issues of multi-source integration. Things like multiple resources referring to the same real-world individuals, or violations of disjoint class axioms could be introduced without being noticed that way.
+
+3.swj1305.pdf
+Operations on RDF(S) Ontologies: A Category Theoretic Approach
+S. Aliyu et al
+URL: http://www.semantic-web-journal.net/content/operations-rdfs-ontologies-category-theoretic-approach
+
+ACCESS Denied, maybe because the paper is not published.
+
+4.swj1367.pdfRODI: Benchmarking Relational-to-Ontology Mapping Generation Quality
+http://www.semantic-web-journal.net/content/rodi-benchmarking-relational-ontology-mapping-generation-quality-0
+
+Section 1.1
+is vital (e.g., [17]), In order to help ontology-based
+> data integration finding its way into mainstream
+--> 'is vital (e.g., [17]). In order to help ontology-based'
+
+
+Section 4.3 
+“Geodata domain has been designed as a medium-sized case” → What does it mean medium size?
+
+
+> Table 11 shows those the scores for three conference
+> domain scenarios
+--> 'shows those scores'
+
+Section 1.3
+The newly
+> added scenarios focus on features that are impor-
+> tant to test mapping quality under real-world chal-
+> lenges
+- Sounds a bit odd to me. (Would have expected a passive like 'important to be tested under real-world challenges'.)
