@@ -417,11 +417,12 @@ export class BaseHTMLRDFaExporter extends BaseDOMExporter {
 	addRefeneces(htmlString){
 
  	var referenceEl = jQuery(htmlString).find('div.csl-entry')
+	console.log(referenceEl)
         if (!referenceEl.length) {
             return htmlString
         }
         referenceEl.attr({
-            "typeof": "deo:Reference"
+            "typeof": "deo:BibliographicReference"
         })
 	jQuery(htmlString).find('div.csl-entry').each(function(index) {
             if (this.innerHTML !== null) {
