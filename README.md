@@ -1,5 +1,5 @@
 # ARAN
-ARAN
+ARAN stands for automated ARticle ANnotator
 
 This folder describes ARAN framework
 Here we present
