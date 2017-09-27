@@ -1,1 +1,5 @@
-Query 1 : reviewer about reference by reviewer one
+Query 1: Get a list of the article's authors.
+
+Query 2: If one of reviewers is has authored an article that is cited by the current article.
+
+Query 3: If the article has a conclusion section.
