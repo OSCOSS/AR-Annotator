@@ -2,12 +2,12 @@
 ARAN stands for automated ARticle ANnotator.
 
 This folder describes ARAN framework.
-###
+### 
 Here we present:
   The source code, 
   Evaluation procedure,
   and a sample created article. 
-    
+###     
   
   In the following comes detailed explanation of each folder:
   
