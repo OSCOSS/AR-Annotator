@@ -11,9 +11,11 @@ ORDER  BY DESC(?commentCount)
 Query 2 : What sections in the article received greatest number of comments by reviewers?
 
 SELECT ?section  (COUNT(?commentID) AS ?commentCount)  WHERE {
-?section <http://schema.org/hasPart> ?commentID .  
+?section <http://schema.org/hasPart> ?commentID . 
+ ?section  <http://schema.org/description> ?sectionName .
+?section  <http://schema.org/description> ?sectionName .
 }
-GROUP BY ?section
+GROUP BY  ?section
 ORDER  BY DESC(?commentCount)
 
 
