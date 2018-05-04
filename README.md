@@ -1,9 +1,8 @@
 # ARAN
 ARAN stands for Automatic Article and Review Annotator
 
-This folder describes ARAN.
+This is repositoy of ARAN and includes
 ### 
-Here we present:
   The source code, 
   Evaluation procedure,
   and a sample created article. 
