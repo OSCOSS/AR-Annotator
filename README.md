@@ -34,5 +34,5 @@ Here we present:
   ## Source Code
   The source code that is reflected by the paper.
 
-## First Use case :
+## An extension based on ARAN :
 An  extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/fiduswriter/fiduswriter-htmlrdfa. 
