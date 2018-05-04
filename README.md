@@ -1,12 +1,9 @@
 # ARAN
-ARAN stands for Automatic Article and Review Annotator
-
-This is repositoy of ARAN and includes
-### 
+ARAN stands for Automatic Article and Review Annotator. 
+The repositoy of ARAN includes:
   The source code, 
   Evaluation procedure,
-  and a sample created article. 
-###     
+  and a sample created article.      
   
   In the following comes detailed explanation of each folder:
   
@@ -31,7 +28,7 @@ This is repositoy of ARAN and includes
  This folder lists the proposed queries to evaluate usefullness of the semantic annotation of the articles done in the related paper.
   
   ## Source Code
-  The source code that is reflected by the paper.
+  The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/ARAN/tree/master/SourceCode/htmlrdfa.
 
 ## An extension based on ARAN :
 An extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/fiduswriter. 
