@@ -1,7 +1,7 @@
 # ARAN
-ARAN stands for automated ARticle ANnotator.
+ARAN stands for Automatic Article and Review Annotator
 
-This folder describes ARAN framework.
+This folder describes ARAN.
 ### 
 Here we present:
   The source code, 
@@ -24,6 +24,8 @@ Here we present:
   
   
   ## Evaluation
+  ### Usability Evaluation
+  This folder is the evaluation of using the system in the use case that the system is used to help authors to get a fast overview of the feedbacks given by reviewers after he/she has got the submission result.
   ### Evaluation usefulness for users
  This folder includes the questionare and procedure used in the related paper to evaluate the ease of consumption of attached reviews to articles. 
  ### Evaluation usefulness for machine clients
