@@ -32,4 +32,7 @@ Here we present:
  This folder lists the proposed queries to evaluate usefullness of the semantic annotation of the articles done in the related paper.
   
   ## Source Code
-  The core source code that is later used in module in Fidus Writer.
+  The source code that is reflected by the paper.
+
+## First Use case :
+An  extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/fiduswriter/fiduswriter-htmlrdfa. 
