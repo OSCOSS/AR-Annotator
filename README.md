@@ -31,4 +31,4 @@ The repositoy of ARAN includes:
   The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/ARAN/tree/master/SourceCode/htmlrdfa.
 
 ## An extension based on ARAN :
-An extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/fiduswriter. 
+An extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/OSCOSS/fiduswriter-htmlrdfa. 
