@@ -1,6 +1,6 @@
-# ARAN
-ARAN stands for Automatic Article and Review Annotator. 
-The repositoy of ARAN includes:
+# AR-Extractor
+AR stands for Article and Review information extractor. 
+The repositoy of AR-Extractor includes:
   The source code, 
   Evaluation procedure,
   and a sample created article.      
@@ -9,7 +9,7 @@ The repositoy of ARAN includes:
   
   ## Sample Articles 
   
-  It includes sample produced articles with ARAN. The specifically show the functionality of the framework in keeping reviews from the review workflow and annotation article sections with RDFa.     
+  It includes sample produced articles with AR-Extractor. The specifically show the functionality of the framework in keeping reviews from the review workflow and annotation article sections with RDFa.     
   
   ## Article Section Classificaiton 
   ### Article URLS
@@ -17,7 +17,6 @@ The repositoy of ARAN includes:
   
   ### AS_metadata
   This folder holdes the extracted section titles from the listed articles in "Article URLS" folder and their classification and mapping to different ontologies. 
-  
   
   ## Evaluation
   ### Usability Evaluation
@@ -28,7 +27,7 @@ The repositoy of ARAN includes:
  This folder lists the proposed queries to evaluate usefullness of the semantic annotation of the articles done in the related paper.
   
   ## Source Code
-  The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/ARAN/tree/master/SourceCode/htmlrdfa.
+  The source code that is reflected by the paper in available in the folder tps://github.com/OSCOSS/AR-Extractor/tree/master/SourceCode/htmlrdfa.
 
-## An extension based on ARAN :
+## An extension based on AR-Extractor :
 An extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/OSCOSS/fiduswriter-htmlrdfa. 
