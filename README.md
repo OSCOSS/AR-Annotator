@@ -1,5 +1,6 @@
 # AR-Extractor
-AR stands for Article and Review information extractor. 
+AR stands for Article and Review information extractor, where the extracted data can be used in the form of RDF data and be queried.
+
 The repositoy of AR-Extractor includes:
   The source code, 
   Evaluation procedure,
