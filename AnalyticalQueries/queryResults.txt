@@ -1,0 +1,15 @@
+Query 1: What range of text in the Requirements section have received the most attention from the reviewers.
+Number of comments per selected text:
+evaluating our implementation: 1
+two applications: 1
+
+Query 2 : What sections in the article received greatest number of comments by reviewers?
+Number of comments per section:
+Requirements: 2
+Introduction: 1
+SupportedWorkflows: 1
+
+Query 3: Search within the reviews and find those comments that contain a specific word
+CommentId and comment content:
+comment-674297328: I do not understand the usage of communication here.
+
