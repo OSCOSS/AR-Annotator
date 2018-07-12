@@ -1,15 +1,22 @@
 Query 1: What range of text in the Requirements section have received the most attention from the reviewers.
-Number of comments per selected text:
+result: Number of comments per selected text:
 evaluating our implementation: 1
 two applications: 1
 
 Query 2 : What sections in the article received greatest number of comments by reviewers?
-Number of comments per section:
+result: Number of comments per section:
 Requirements: 2
 Introduction: 1
 SupportedWorkflows: 1
 
 Query 3: Search within the reviews and find those comments that contain a specific word
-CommentId and comment content:
-comment-674297328: I do not understand the usage of communication here.
+result: CommentId and comment content:
+comment-674297328: I do not understand the usage of communication here. The wording is not clear.
+
+Sentiment Query 1: Does the second reviewer have a positive idea about the Requirements section?
+result:
+positive
+Sentiment Query 2: What was the section of article that reviewers were most unhappy about?
+result: that section of paper is 
+Introduction 
 
