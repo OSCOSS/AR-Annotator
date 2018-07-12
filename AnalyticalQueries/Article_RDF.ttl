@@ -11,17 +11,17 @@ _:_45d612f6-c85b-477e-af23-9644e505e574 <http://www.w3.org/1999/02/22-rdf-syntax
 _:_1eed5238-14a1-479c-9ad4-336f10a4db18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/deo/Reference> .
 _:_7f3080d8-71f1-4727-b4c3-4d6e941e1082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:_9ecde95a-7469-4d26-a336-4cdf99b1b479 .
 _:_7f3080d8-71f1-4727-b4c3-4d6e941e1082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <Introduction> .
-<https://fiduswriter-devel.gesis.org/document/8/#674297328#comment-674297328> <http://schema.org/description> "I do not understand the usage of communication here."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://fiduswriter-devel.gesis.org/document/8/#674297328#comment-674297328> <http://schema.org/description> "I do not understand the usage of communication here. The wording is not clear."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://fiduswriter-devel.gesis.org/document/8/#674297328#comment-674297328> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/oa#TextualBody> .
-<https://fiduswriter-devel.gesis.org/document/8/#674297328#comment-674297328> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "I do not understand the usage of communication here."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://fiduswriter-devel.gesis.org/document/8/#674297328#comment-674297328> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "I do not understand the usage of communication here. The wording is not clear."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://fiduswriter-devel.gesis.org/document/8/#674297328#comment-674297328> <http://schema.org/name> "Comment" .
 <https://fiduswriter-devel.gesis.org/document/8/#674297329#comment-674297329> <http://schema.org/description> "Are these application or framework?"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://fiduswriter-devel.gesis.org/document/8/#674297329#comment-674297329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/oa#TextualBody> .
 <https://fiduswriter-devel.gesis.org/document/8/#674297329#comment-674297329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Are these application or framework?"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://fiduswriter-devel.gesis.org/document/8/#674297329#comment-674297329> <http://schema.org/name> "Comment" .
-<https://fiduswriter-devel.gesis.org/document/8/#674297330#comment-674297330> <http://schema.org/description> "How did they participate in the evaluation?"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://fiduswriter-devel.gesis.org/document/8/#674297330#comment-674297330> <http://schema.org/description> "This evaluation is very promising. How did they participate in the evaluation?"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://fiduswriter-devel.gesis.org/document/8/#674297330#comment-674297330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/oa#TextualBody> .
-<https://fiduswriter-devel.gesis.org/document/8/#674297330#comment-674297330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "How did they participate in the evaluation?"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://fiduswriter-devel.gesis.org/document/8/#674297330#comment-674297330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "This evaluation is very promising. How did they participate in the evaluation?"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://fiduswriter-devel.gesis.org/document/8/#674297330#comment-674297330> <http://schema.org/name> "Comment" .
 <ChristophLange> <http://schema.org/publisher> _:_69c88a2a-c77c-4cee-8fb0-7a084d724cf7 .
 <ChristophLange> <http://schema.org/creator> _:_69c88a2a-c77c-4cee-8fb0-7a084d724cf7 .
