@@ -1,5 +1,7 @@
 # AR-Extractor
 AR stands for Article and Review information extractor, where the extracted data can be used in the form of RDF data and be queried.
+ 
+The related article is: "Sadeghi et al. Mining Peer-Review Comments in Semantically Annotated Articles." 
 
 The repositoy of AR-Extractor includes:
   The source code, 
@@ -8,27 +10,31 @@ The repositoy of AR-Extractor includes:
   
   In the following comes detailed explanation of each folder:
   
-  ## Sample Articles 
+  ### Sample Articles 
   
   It includes sample produced articles with AR-Extractor. The specifically show the functionality of the framework in keeping reviews from the review workflow and annotation article sections with RDFa.     
   
   ## Article Section Classificaiton 
-  ### Article URLS
+  #### Article URLS
   This folder includes a list of urls to articles in the are of computer science that have variety of layouts. We used these articles to create a knowledge base of common titles for different sections inside articles.
   
-  ### AS_metadata
+  #### AS_metadata
   This folder holdes the extracted section titles from the listed articles in "Article URLS" folder and their classification and mapping to different ontologies. 
   
-  ## Evaluation
-  ### Usability Evaluation
+  ### Evaluation
+  #### Usability Evaluation
   This folder is the evaluation of using the system in the use case that the system is used to help authors to get a fast overview of the feedbacks given by reviewers after he/she has got the submission result.
-  ### Evaluation usefulness for users
+  #### Evaluation usefulness for users
  This folder includes the questionare and procedure used in the related paper to evaluate the ease of consumption of attached reviews to articles. 
- ### Evaluation usefulness for machine clients
+ #### Evaluation usefulness for machine clients
  This folder lists the proposed queries to evaluate usefullness of the semantic annotation of the articles done in the related paper.
   
-  ## Source Code
+  
+ ### AnalyticalQueries
+ This section performs article review mining. More details are in the folder and in https://github.com/OSCOSS/AR-Extractor/blob/master/AnalyticalQueries/description.md 
+  
+  ### Source Code
   The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/AR-Extractor/tree/master/SourceCode/htmlrdfa.
 
-## An extension based on AR-Extractor :
+### An extension based on AR-Extractor :
 An extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/OSCOSS/fiduswriter-htmlrdfa. 
