@@ -1,9 +1,9 @@
-# AR-Extractor
-AR stands for Article and Review information extractor, where the extracted data can be used in the form of RDF data and be queried.
+# AR-AN
+AR-AN stands for Article and Review Annotator.
  
-The related article is: "Sadeghi et al. Mining Peer-Review Comments in Semantically Annotated Articles." 
+The related article is: "Sadeghi et al. Automatically Annotating Articles Towards Opening and Reusing Transparent Peer Reviews." 
 
-The repositoy of AR-Extractor includes:
+The repositoy of AR-AN includes:
   The source code, 
   Evaluation procedure,
   and a sample created article.      
@@ -29,11 +29,7 @@ The repositoy of AR-Extractor includes:
  #### Evaluation usefulness for machine clients
  This folder lists the proposed queries to evaluate usefullness of the semantic annotation of the articles done in the related paper.
   
-  
- ### AnalyticalQueries
- This section performs article review mining. More details are in the folder and in https://github.com/OSCOSS/AR-Extractor/blob/master/AnalyticalQueries/description.md 
-  
-  ### Source Code
+ ### Source Code
   The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/AR-Extractor/tree/master/SourceCode/htmlrdfa.
 
 ### An extension based on AR-Extractor :
