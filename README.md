@@ -30,7 +30,7 @@ The repositoy of AR-Annotator includes:
  This folder lists the proposed queries to evaluate usefullness of the semantic annotation of the articles done in the related paper.
   
  ### Source Code
-  The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/AR-Extractor/tree/master/SourceCode/htmlrdfa.
+  The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/AR-Annotator/tree/master/SourceCode/htmlrdfa.
 
 ### An extension based on AR-Annotator :
 An extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/OSCOSS/fiduswriter-htmlrdfa. 
