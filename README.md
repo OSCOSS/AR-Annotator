@@ -1,5 +1,5 @@
-# AR-AN
-AR-AN stands for Article and Review Annotator.
+# AR-Annotator
+AR-Annotator stands for Article and Review Annotator.
  
 The related article is: "Sadeghi et al. Automatically Annotating Articles Towards Opening and Reusing Transparent Peer Reviews." 
 
@@ -32,5 +32,5 @@ The repositoy of AR-AN includes:
  ### Source Code
   The source code that is reflected by the paper in available in the folder https://github.com/OSCOSS/AR-Extractor/tree/master/SourceCode/htmlrdfa.
 
-### An extension based on AR-Extractor :
+### An extension based on AR-Annotator :
 An extension for Fidus Writer is created based on the current code. The developed extension can be accessed in this github repository via https://github.com/OSCOSS/fiduswriter-htmlrdfa. 
