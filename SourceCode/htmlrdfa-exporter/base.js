@@ -400,6 +400,7 @@ export class BaseHTMLRDFaExporter extends BaseDOMExporter {
     cleanUpTags(htmlString){
         htmlString = htmlString.replace(/(<img("[^"]*"|[^\/">])*)>/gi, "$1/>");
         htmlString = htmlString.replace(/(<br("[^"]*"|[^\/">])*)>/gi, "$1/>");
+        htmlString = htmlString.replace(/&nbsp;/g, " ");
 
         return htmlString
     }
