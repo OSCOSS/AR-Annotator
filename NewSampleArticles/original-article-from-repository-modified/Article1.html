@@ -1,0 +1,253 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:base="http://www.dc4plus.com/references/rdf_sem.html"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/" >
+      
+  <head profile="http://ns.inria.fr/grddl/rdfa/">
+    <title>Opening Scholarly Communication in Social Sciences by Connecting Collaborative Authoring to Peer Review</title>
+        
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="https://dokie.li/media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+        <link disabled="" href="https://dokie.li/media/css/lncs.css" media="all" rel="stylesheet alternate" title="LNCS" />
+        <link href="https://dokie.li/media/css/acm.css" media="all" rel="stylesheet" title="ACM" />
+        <link href="https://dokie.li/media/css/do.css" media="all" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
+        <script src="https://dokie.li/scripts/simplerdf.js"></script>
+        <script src="https://dokie.li/scripts/medium-editor.min.js"></script>
+        <script src="https://dokie.li/scripts/do.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <main>
+      <article about="" typeof="schema:Article">
+        <div class="article-content" id="content">
+          <p>
+              <div class="article-part article-title" property="schema:name">
+                  <h1 class="article-part article-title" property="schema:name">Opening Scholarly Communication in Social Sciences by Connecting Collaborative Authoring to Peer Review</h1>
+              </div>
+          </p>
+          <div class="article-part metadata article-authors" id="authors">
+              <dd id="AfshinSadeghi" rel="bibo:authorList" resource="#AfshinSadeghi">
+                  <span rel="schema:creator schema:publisher schema:author" typeof="schema:person">Afshin  Sadeghi</span>
+              </dd>
+              <dd id="JohannesWilm" rel="bibo:authorList" resource="#JohannesWilm">
+                  <span rel="schema:creator schema:publisher schema:author" typeof="schema:person">Johannes  Wilm</span>
+              </dd>
+              <dd id="PhilippMayr" rel="bibo:authorList" resource="#PhilippMayr">
+                  <span rel="schema:creator schema:publisher schema:author" typeof="schema:person">Philipp Mayr</span>
+              </dd>
+              <dd id="ChristophLange" rel="bibo:authorList" resource="#ChristophLange">
+                  <span rel="schema:creator schema:publisher schema:author" typeof="schema:person">Christoph Lange</span>
+              </dd>
+          </div>
+          <div class="article-part article-body">
+            <p><strong>Abstract</strong></p>
+            <p>The objective of the OSCOSS research project on "Opening Scholarly Communication in the Social Sciences" is to build a coherent collaboration environment that facilitates scholarly communication workflows of social scientists in the roles of authors, reviewers, editors and readers. This paper presents the implementation of the core of this environment: the integration of the Fidus Writer academic word processor with the Open Journal Systems (OJS) submission and review management system.</p>
+            <section id="Introduction" inlist="" rel="schema:hasPart" resource="#Introduction">
+              <h2 property="schema:name">Introduction </h2>
+              <div datatype="rdf:HTML" property="schema:description" resource="#Introduction" typeof="deo:Introduction">
+                <p>The objective of the DFG-funded OSCOSS research project (Mayr and Lange 2016) on "Opening
+                  <span class="comment ref do" data-id="674297328" rel="schema:hasPart" typeof="dctypes:Text" resource="r-674297328">
+                    <mark id="674297328" property="schema:description"> Scholarly Communication</mark>
+                    <sup class="ref-annotation">
+                      <a rel="cito:hasReplyFrom" href="#674297328" resource="https://fiduswriter-devel.gesis.org/document/8//comment-674297328">          💬</a>
+                    </sup>
+                  </span> in the Social Sciences" is to build a coherent collaboration environment that facilitates scholarly communication workflows (Sompel et al. 2004) of social scientists in the roles of authors, reviewers, editors and readers. A collaborative writing environment (Whitehead 2005), for which we chose the Fidus Writer academic word processor
+                  <span class="footnote-marker" data-footnote="https://www.fiduswriter.org/"></span> , is the hub of the overall environment. Further components that we are currently integrating include databases of metadata about scientific publications and research data sets; we are also planning to include repositories hosting the source code of data analysis software. This paper presents the integration of Fidus Writer with a submission and review management system; for this, we chose Open Journal Systems (OJS)
+                  <span class="footnote-marker" data-footnote="https://pkp.sfu.ca/ojs/ojs-usage/ojs-stats/"></span> .
+                </p>
+                <p> In the “Background” section, we give an overview about the scholarly authoring and reviewing process, our intended approach and the supported workflows including authoring workflow, journal/conference editing workflow and reviewing workflow. The "Related Work" section describes popular state of the art collaborative writing and reviewing systems. In the "Requirements" section we outline the requirements from the perspective of authors, editors and reviewers. The integration of Fidus Writer and OJS is technically described in "Implementation". The paper ends with our "Conclusion". </p>
+              </div>
+              <aside class="note do">
+                <blockquote cite="674297328">
+                  <article id="674297328" about="i:" typeof="oa:Annotation" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# schema: http://schema.org/ dcterms: http://purl.org/dc/terms/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams#       i: https://fiduswriter-devel.gesis.org/document/8/#674297328">
+                    <h3 property="schema:name" style="display:none">afshin sadeghi   
+                      <span rel="oa:motivatedBy" resource="oa:replying">replies</span>
+                    </h3>     
+                    <dl class="author-name">
+                      <dt>Authors</dt>
+                      <dd>
+                        <span rel="schema:creator">
+                          <span about="userURI#3" typeof="schema:Person">     
+                            <img alt="" rel="schema:image" src="/static/img/default_avatar.png" width="48" height="48"/> 
+                            <a href="#">      
+                              <span about="userURI#3" property="schema:name">afshin sadeghi</span>
+                            </a>
+                          </span>
+                        </span>
+                      </dd>
+                    </dl>     
+                    <dl class="published">
+                      <dt>Published</dt>
+                      <dd>
+                        <a href="https://fiduswriter-devel.gesis.org/document/8/#674297328">
+                          <time datetime="1506355021248" datatype="xsd:dateTime" property="schema:datePublished" content="1506355021248">1506355021248</time>
+                        </a>
+                      </dd>     
+                      <section id="comment-674297328" rel="oa:hasBody" resource="i:#comment-674297328">     
+                        <h2 property="schema:name">Comment</h2>     
+                        <div datatype="rdf:HTML" property="rdf:value schema:description" resource="i:#comment-674297328" typeof="oa:TextualBody">I do not understand the usage of communication here.</div>
+                      </section>
+                      <br/><br/>
+                    </dl>
+                  </article>
+                </blockquote>
+              </aside>
+            </section>
+            <section id="Background" inlist="" rel="schema:hasPart" resource="#Background">
+              <h2 property="schema:name">Background </h2>
+              <div datatype="rdf:HTML" property="schema:description" resource="#Background" typeof="deo:ProblemStatement">
+                <p>Manuscripts submitted to journals and conferences are typically written using word processors. A breakthrough in this area in recent years has been a move from traditional desktop applications to collaborative, web-based versions. Modern online platforms such as Google Docs
+                  <span class="footnote-marker" data-footnote="https://www.sharelatex.com"></span> , ShareLaTeX
+                  <span class="footnote-marker" data-footnote="https://www.overleaf.com"></span> and Overleaf
+                  <span class="footnote-marker" data-footnote=""></span> have made collaborative authoring significantly easier. The entire writing process canbe completed online – from the writing of the first draft to the production of a camera-ready document. On the other side of the life cycle of scientific articles is the reviewing workflow (Bornmann 2011; Bornmann and Daniel 2010). Mature submission and review management systems supporting this workflow, including the open source solution Open Journal Systems (Smecher 2008) and the centrally hosted solution EasyChair6 which follows a free usage model; both are web-based platforms. These two processes together form the main parts of scientific writing, and they are intertwined, as, after reviewing, the control over a manuscript is typically given back to the authors, who will then revise it. Nevertheless, to our knowledge there is currently no mature system that supports both steps in combination. Therefore, the reviewing workflow is typically realized in a way that requires manual file transfers at several points: after the authoring process is finished, the authors have to export a copy of the manuscript from the collaborative authoring system and submit it to the submission and review management system. There, the reviewers have to download the manuscript, comment on it, upload it back to the system, which will notify the journal editor or the conference PC chair, who will take a decision and notify the authors, who read the comments and, unless rejected, applies revisions to the manuscript before submitting it once more. This review cycle can be repeated two or more times. In every such cycle, authors as well as reviewers have to download and upload a document, authors have to apply revisions to a document according to comments that are given as plain text or, in the best typical case, as annotations to a copy of the document itself. Unless the manuscript is submitted in an editable format, such as an office word processor format, but in a read-only format such as PDF, the authors have to apply revisions by viewing side-by-side their own document in their word processor and the reviewers' annotations in a document viewer application. This procedure is error-prone for authors, as they may overlook comments or apply revisions in the wrong place of the document. It is also cumbersome for the majority of reviewers who are not using PDF annotation tools but write even minor revision requests into their plain-text overall summary of their review, as they have to refer to texts by approximate references such as "in the 2nd paragraph of page 7".
+                </p>
+              </div>
+            </section>
+            <section id="Approach" inlist="" rel="schema:hasPart" resource="#Approach">
+              <h2 property="schema:name">Approach </h2>
+              <div datatype="rdf:HTML" property="schema:description" resource="#Approach" typeof="deo:ProblemStatement">
+                <p>With the OSCOSS platform, we aim at linking the two steps of authoring and reviewing scholarly articles. The omnipresence of the Web means that the involved systems already have ways to connect. We choose the free open source systems Fidus Writer and Open Journal Systems (OJS), a submission and review management system, as they have open plugin APIs. This means that all that is left is extending the functionality of each system by a plugin capable of communicating with the other system, e.g., via RESTful web service interfaces. This not only allows the submission of the articles directly to the reviewing environment – it even lets authors and reviewers interact directly on specific sections of an article, which is much more fine-grained than peer review is typically done at the moment.</p>
+              </div>
+            </section>
+            <section id="SupportedWorkflows" inlist="" rel="schema:hasPart" resource="#SupportedWorkflows">
+              <h2 property="schema:name">Supported Workflows </h2>
+              <div datatype="rdf:HTML" property="schema:description" resource="#SupportedWorkflows" typeof="deo:ProblemStatement">
+                <p>In this article, we use the term "workflow" to denote a largely predetermined procedure that users in different roles will take through the framework. It varies slightly from journal to journal and from conference to conference. In this section we will describe the workflows that we considered necessary to be addressed by our implementation of the OSCOSS platform. Authoring workflow. An author starts writing about his research and invites his collaborating researchers to participate. Each person could be responsible for a part of the manuscript; some authors might just review text written by other authors. The corresponding author submits the article to a conference or journal. After the review, the authors receive feedback, usually including some concrete advice on how to correct or update parts of the writing. Journal/conference editing workflow. The journal editor or conference PC chair assigns one, typically two to three reviewers to review every manuscript submitted. The editor also takes the final decision on whether to accept or reject a manuscript or to request the authors to resubmit a revision. He makes this decision based on the review of the reviews or sometimes his own, additional review of the manuscript. Reviewing workflow. The reviewing process starts when a reviewer opens an assigned manuscript. His role is to assess the quality of the manuscript. He is expected to appraise the manuscript as a whole but can also give fine-grained feedback on specific issues in specific places of the manuscript. The reviewer may provide the authors with constructive feedback suggesting how they could improve, shorten or extend the manuscript. Finally, the reviewing workflow includes writing general feedback to journal editor to help him to quickly decide on whether to accept or reject the manuscript or to request a revision from the authors. Depending on the policy of the conference or journal, this cycle can be repeated several times. 
+                  <span class="citation" data-format="autocite" data-references="[{&quot;id&quot;:0}]">(Mayr &amp; Lange, 2016)</span>
+                </p>
+                <p>To the best of our knowledge, none of the authoring and reviewing systems mentioned above have ever been integrated with each other. The only existing solution is the ARPHA Writing Tool
+                  <span class="footnote-marker" data-footnote="http://arphahub.com/"></span>, which is trying to create both a writing and reviewing system. In comparison to Fidus Writer, ARPHA authoring tool does not support realtime collaborative editing. Their reviewing system which is used by less than a handful of publishers is not as mature as OJS in terms of documenting and ease of use.  In the next section we explain the requirements that we considered for an integrated system. 
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><p><strong>System / Feature</strong></p></td>
+                            <td><p><strong>Open source</strong></p></td>
+                            <td><p><strong>Academic content</strong></p></td>
+                            <td><p><strong>WYSIWYG</strong></p></td>
+                            <td><p><strong>Export formats</strong></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Google Docs</p></td>
+                            <td><p>No</p></td>
+                            <td><p>Formulas</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>DOCX, ODT, PDF, HTML</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Microsoft Office Online</p></td>
+                            <td><p>No</p></td>
+                            <td><p>-</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>DOCX, ODT, PDF</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Zoho Docs</p></td>
+                            <td><p>No</p></td>
+                            <td><p>Formulas</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>DOCX, ODT, PDF, HTML</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>ShareLaTeX</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>Formulas, Citations</p></td>
+                            <td><p>No</p></td>
+                            <td><p>LaTeX, PDF</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Overleaf</p></td>
+                            <td><p>No</p></td>
+                            <td><p>Formulas, Citations</p></td>
+                            <td><p>No</p></td>
+                            <td><p>LaTeX, PDF</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Authorea</p></td>
+                            <td><p>No</p></td>
+                            <td><p>Formulas, Citations</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>DOCX, LaTeX, PDF</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Etherpad</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>-</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>HTML</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Fidus Writer</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>Formulas, Citations</p></td>
+                            <td><p>Yes</p></td>
+                            <td><p>DOCX, ODT, PDF, LaTeX, HTML</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Table 1: 
+                    <span class="comment ref do" data-id="2987879860" rel="schema:hasPart" typeof="dctypes:Text" resource="r-2987879860">
+                        <mark id="2987879860" property="schema:description">Collaborative online writing systems</mark>
+                        <sup class="ref-annotation">        
+                            <a rel="cito:hasReplyFrom" href="#2987879860" resource="https://fiduswriter-devel.gesis.org/document/8//comment-2987879860">          💬</a>
+                        </sup>
+                    </span>
+                </p>
+              </div>
+            </section>
+            <section id="Requirements" inlist="" rel="schema:hasPart" resource="#Requirements">
+              <h2 property="schema:name"><strong>Requirements</strong></h2>
+              <div datatype="rdf:HTML" property="schema:description" resource="#Requirements" typeof="deo:ProblemStatement">
+                <p>From the perspective of authors, editors and reviewers, an integrated system needs to comply with certain requirements to be useful. By reflecting on our own experience in each of these three roles, and by talking to the editors of the GESIS journals mda 
+                  <span class="footnote-marker" data-footnote="http://www.gesis.org/hsr/aktuelle-hefte/"></span> and HSR 
+                  <span class="footnote-marker" data-footnote="http://www.gesis.org/hsr/aktuelle-hefte/"></span>, which will serve as pilots for evaluating our implementation in the scope of the OSCOSS project, we obtained the following list of requirements.
+                </p>
+                <p>• Ease of use. The integration of the two systems is supposed to make the two workflows easier, so it should reduce the number of manual steps instead of increasing the complexity of the workflow by adding steps. </p>
+                <p>• Continuity of the workflows through the two applications. When a function of one application requires to call a function of the other system, this call must be performed in the background. Jumping from one system to the other must appear seamless to the author. A user who is registered in one system must also be known in the other one (single sign-on). When a reviewer logs into OJS, he must also be able to see his assigned manuscripts in Fidus Writer without having to log in a second time.</p>
+                <p>• Each system must support its part of the peer review process. For example, comments whose visibility is restricted by role (e.g. reviewers' comments who are only visible to the authors once approved by the editor), must be available in Fidus Writer, but none of the currently existing peer review services of OJS should be stopped from working; therefore, OJS still needs to support users who are not using Fidus Writer.</p>
+                <figure data-equation="" data-image="3" data-figure-category="figure" data-caption="Matching of user roles in FidusWriter and OJS" id="F61459831" data-image-src="/media/images/5a7abbf0-4a89-4515-a285-0e0b34cadb0d.png">
+                  <div>
+                    <img src="5a7abbf0-4a89-4515-a285-0e0b34cadb0d.png"/>
+                  </div>
+                  <figcaption>
+                    <span class="figure-cat-figure" data-figure-category="figure">figure 1: </span>
+                    <span data-caption="Matching of user roles in FidusWriter and OJS">Matching of user roles in FidusWriter and OJS</span>
+                  </figcaption>
+                </figure>
+                <p></p>
+              </div>
+            </section>
+          </div>
+          <h1 class="article-bibliography-header"></h1>
+          <section id="references">
+            <h2>References</h2>
+            <div datatype="rdf:HTML" rel="schema:hasPart" typeof="deo:Reference">
+              <ol>
+                <li>
+                  <cite>Mayr, P., &amp; Lange, C. (2016). The Opening Scholarly Communication in Social Sciences project OSCOSS. <i>OSCOSS</i>.</cite>
+                </li>
+              </ol>
+            </div>
+          </section>
+          <script>
+              jQuery( document ).ready(function() {
+                  jQuery(this).find('span.comment').each(function () {
+                  var id=jQuery(this).attr('data-id');
+                  var top=jQuery(this).offset().top - 40;
+                  jQuery(document).find('article[id="'+id+'"]').each(function () {
+                      jQuery(this).css('top',top);
+                  });
+              })
+              ;});
+          </script>
+        </div>
+      </article>
+    </main>
+  </body>
+  
+</html>
