@@ -1,9 +1,9 @@
-import {createSlug} from "../tools/file"
-import {findImages} from "../tools/html"
-import {ZipFileCreator} from "../tools/zip"
+import {createSlug} from "../exporter/tools/file"
+import {findImages} from "../exporter/tools/html"
+import {ZipFileCreator} from "../exporter/tools/zip"
 import {htmlExportTemplate} from "./templates"
-import {addAlert} from "../../common"
-import {katexRender} from "../../katex"
+import {addAlert} from "../common"
+import {katexRender} from "../katex"
 import {BaseHTMLRDFaExporter} from "./base"
 import download from "downloadjs"
 
@@ -71,7 +71,6 @@ export class HTMLRDFaExporter extends BaseHTMLRDFaExporter {
 
         let includeZips = []
 
-        console.log("in rdfa export index")
         let httpOutputList = findImages(contents)
 
         contents = this.addSectionsTag(contents)
@@ -85,18 +84,20 @@ export class HTMLRDFaExporter extends BaseHTMLRDFaExporter {
         contents = this.converAuthorsToRDFa(contents)
 
         contents = this.convertCommentsToRDFa(contents)
-        
+
         let sidetagList = []
         contents = this.convertSideCommentsToRDFa(contents,this.doc.comments, sidetagList)
 
         contents = this.adjustSections(contents,sidetagList)
 
- 	contents = this.addRefeneces(contents)
+     	contents = this.addRefeneces(contents)
 
- 	contents = this.addRefeneceRDFa(contents)
+     	contents = this.addRefeneceRDFa(contents)
 
 
+        contents = this.cleanUpAttributes(contents)
         let contentsCode = this.replaceImgSrc(contents.innerHTML)
+        contentsCode = this.cleanUpTags(contentsCode)
 
         let dom = htmlExportTemplate({
             part: false,
@@ -106,6 +107,8 @@ export class HTMLRDFaExporter extends BaseHTMLRDFaExporter {
             styleSheets,
             contents: contentsCode
         })
+
+        dom = dom.replace('<html>','<html xmlns="http://www.w3.org/1999/xhtml" xml:base="http://www.dc4plus.com/references/rdf_sem.html" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foaf="http://xmlns.com/foaf/0.1/" >')
 
         let outputList = [{
             filename: 'document.html',

@@ -1,10 +1,10 @@
-import {escapeText} from "../../common"
+import {escapeText} from "../common"
 /** A template for HTML+RDFa export of a document. Using dokieli template */
 export let htmlExportTemplate = ({title, styleSheets, part, contents}) =>
 `<!DOCTYPE html>
 <html>
     <head>
-        <title>${title}</title>
+        <title>${escapeText(title)}</title>
         ${
             styleSheets.map(item =>
                 `\t<link rel="stylesheet" type="text/css" href="${item.filename}" />`
@@ -38,3 +38,180 @@ export let htmlExportTemplate = ({title, styleSheets, part, contents}) =>
 		</main>
 	</body>
 </html>`
+
+export let commentHeaderTemplate = ({href, commentNode}) =>
+`<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>${href}#${commentNode.id}</title>
+    </head>
+    <body>
+        <main>
+            <article id="${commentNode.id}" about="i:" typeof="oa:Annotation"
+                    prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# schema: http://schema.org/ dcterms: http://purl.org/dc/terms/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# i: ${href}#${commentNode.id}">
+`
+
+export let commentHeaderRDFaTemplate = ({href, commentNode}) =>
+`<article id="${commentNode.id}" about="i:" typeof="oa:Annotation"
+        prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# schema: http://schema.org/ dcterms: http://purl.org/dc/terms/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# i: ${
+            `${href}#${commentNode.id}`
+        }"
+>`
+
+export let commentBodyTemplate = ({commentNode, href}) =>
+`<h1 property="schema:name">
+    ${escapeText(commentNode.userName)}
+    <span rel="oa:motivatedBy" resource="oa:replying">replies</span>
+</h1>
+<dl class="author-name">
+    <dt>Authors</dt>
+    <dd>
+        <span rel="schema:creator">
+            <span about="userURI#${commentNode.user}" typeof="schema:Person">
+                <img alt="" rel="schema:image" src="${commentNode.userAvatar}" width="48" height="48"/>
+                <a href="#">
+                    <span about="userURI#${commentNode.user}" property="schema:name">
+                        ${escapeText(commentNode.userName)}
+                    </span>
+                </a>
+            </span>
+        </span>
+    </dd>
+</dl>
+<dl class="published">
+    <dt>Published</dt>
+    <dd>
+        <a href="${href}#${commentNode.id}">
+            <time datetime="${commentNode.date}" datatype="xsd:dateTime"
+                    property="schema:datePublished" content="${commentNode.date}">
+                ${commentNode.date}
+            </time>
+        </a>
+    </dd>
+</dl>
+<section id="comment-${commentNode.id}" rel="oa:hasBody"
+        resource="i:#comment-${commentNode.id}">
+    <h2 property="schema:name">Comment</h2>
+    <div datatype="rdf:HTML" property="rdf:value schema:description"
+            resource="i:#comment-${commentNode.id}" typeof="oa:TextualBody">
+        ${commentNode.comment}
+    </div>
+</section>
+<br/>
+<br/>
+${
+    commentNode.answers.map(answer =>
+        `<h2 property="schema:name">Answers</h2>
+        <br/>
+        <br/>
+        <dl class="author-name">
+            <dt>Authors</dt>
+            <dd>
+                <span rel="schema:creator">
+                    <span about="userURI#${answer.user}" typeof="schema:Person">
+                        <img alt="" rel="schema:image" src="${answer.userAvatar}"
+                                width="48" height="48"/>
+                        <a href="#">
+                            <span about="userURI#${answer.user}" property="schema:name">
+                                ${escapeText(answer.userName)}
+                            </span>
+                        </a>
+                    </span>
+                </span>
+            </dd>
+        </dl>
+        <dl class="published">
+            <dt>Published</dt>
+            <dd>
+                <a href="${href}#${answer.id}">
+                    <time datetime="${answer.date}" datatype="xsd:dateTime"
+                            property="schema:datePublished" content="${answer.date}">
+                        ${answer.date}
+                    </time>
+                </a>
+            </dd>
+        </dl>
+        <section id="answer-${answer.id}" rel="oa:hasBody" resource="i:#answer-${answer.id}">
+            <h2 property="schema:name">Answer</h2>
+            <div datatype="rdf:HTML" property="rdf:value schema:description"
+                    resource="i:#answer-${answer.id}" typeof="oa:TextualBody">
+                ${escapeText(answer.answer)}
+            </div>
+        </section>`
+    ).join('')
+}`
+
+export let commentBodyRDFaTemplate = ({commentNode, href}) =>
+`<h3 property="schema:name" style="display:none">
+    ${escapeText(commentNode.userName)}
+    <span rel="oa:motivatedBy" resource="oa:replying">replies</span>
+</h3>
+<dl class="author-name"><dt>Authors</dt><dd><span rel="schema:creator">
+    <span about="userURI#${commentNode.user}" typeof="schema:Person">
+       <img alt="" rel="schema:image" src="${commentNode.userAvatar}" width="48" height="48"/>
+       <a href="#"><span about="userURI#${commentNode.user}" property="schema:name">
+           ${escapeText(commentNode.userName)}
+       </a>
+    </span>
+</dl>
+<dl class="published">
+    <dt>Published</dt>
+    <dd>
+        <a href="${href}#${commentNode.id}">
+            <time datetime="${commentNode.date}"
+                    datatype="xsd:dateTime" property="schema:datePublished"
+                    content="${commentNode.date}">
+                ${commentNode.date}
+            </time>
+        </a>
+    </dd>
+</dl>
+<section id="comment-${commentNode.id}" rel="oa:hasBody"
+        resource="i:#comment-${commentNode.id}">
+    <h2 property="schema:name">Comment</h2>
+    <div datatype="rdf:HTML" property="rdf:value schema:description"
+            resource="i:#comment-${commentNode.id}" typeof="oa:TextualBody">
+        ${commentNode.comment}
+    </div>
+</section>
+${
+    commentNode.answers.map(answer =>
+    `<h3 property="schema:name" style="display:none">
+        Answers</h3>
+    <dl class="author-name">
+        <dt>Authors</dt>
+        <dd>
+            <span rel="schema:creator">
+            <span about="userURI#${answer.user}" typeof="schema:Person">
+            <img alt="" rel="schema:image" src="${answer.userAvatar}"
+                    width="48" height="48"/>
+            <a href="#">
+                <span about="userURI#${answer.user}" property="schema:name">
+                    ${escapeText(answer.userName)}
+                </span>
+            </a>
+        </dd>
+    </dl>
+    <dl class="published">
+        <dt>Published</dt>
+        <dd>
+            <a href="${href}#${answer.id}">
+                <time datetime="${answer.date}" datatype="xsd:dateTime"
+                        property="schema:datePublished" content="${answer.date}">
+                        ${answer.date}
+                </time>
+            </a>
+        </dd>
+        <section id="answer-${answer.id}" rel="oa:hasBody"
+                resource="i:#answer-${answer.id}">
+            <h2 property="schema:name">Answer</h2>
+            <div datatype="rdf:HTML" property="rdf:value schema:description"
+                    resource="i:#answer-${answer.id}" typeof="oa:TextualBody">
+                ${escapeText(answer.answer)}
+            </div>
+        </section>`
+    ).join('')
+}
+`
