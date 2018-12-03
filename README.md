@@ -1,7 +1,5 @@
 # AR-Annotator
 AR-Annotator stands for Article and Review Annotator.
- 
-The related article is: "Sadeghi et al. Automatically Annotating Articles Towards Opening and Reusing Transparent Peer Reviews." 
 
 The repositoy of AR-Annotator includes:
   The source code, 
